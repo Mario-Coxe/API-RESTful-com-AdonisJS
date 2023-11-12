@@ -8,47 +8,37 @@ Este repositório contém um projeto de API RESTful desenvolvido usando AdonisJS
 
 ## Rotas
 
-1. **Rota:** `/uploads/*`
-
-   - **Métodos:** GET|HEAD
-   - **Descrição:** Esta rota serve para disponibilizar arquivos estáticos armazenados localmente. É gerenciada pelo middleware `drive.local.serve` por meio de um fechamento (`Closure`).
-
-2. **Rota:** `/v1/api`
-
-   - **Métodos:** GET|HEAD
-   - **Descrição:** Rota base para a API. Não tem um controlador associado diretamente; é gerenciada por meio de um fechamento (`Closure`).
-
-3. **Rota:** `/v1/api/moments`
+1. **Rota:** `/v1/api/moments`
 
    - **Métodos:** GET|HEAD
    - **Controlador:** `MomentsController.index`
    - **Descrição:** Obtém a lista de momentos disponíveis.
 
-4. **Rota:** `/v1/api/moments`
+2. **Rota:** `/v1/api/moments`
 
    - **Métodos:** POST
    - **Controlador:** `MomentsController.store`
    - **Descrição:** Cria um novo momento.
 
-5. **Rota:** `/v1/api/moments/:id`
+3. **Rota:** `/v1/api/moments/:id`
 
    - **Métodos:** GET|HEAD
    - **Controlador:** `MomentsController.show`
    - **Descrição:** Obtém detalhes de um momento específico pelo seu ID.
 
-6. **Rota:** `/v1/api/moments/:id`
+4. **Rota:** `/v1/api/moments/:id`
 
    - **Métodos:** PUT|PATCH
    - **Controlador:** `MomentsController.update`
    - **Descrição:** Atualiza um momento existente pelo seu ID.
 
-7. **Rota:** `/v1/api/moments/:id`
+5. **Rota:** `/v1/api/moments/:id`
 
    - **Métodos:** DELETE
    - **Controlador:** `MomentsController.destroy`
    - **Descrição:** Exclui um momento pelo seu ID.
 
-8. **Rota:** `/v1/api/moments/:momentId/comments`
+6. **Rota:** `/v1/api/moments/:momentId/comments`
 
    - **Métodos:** POST
    - **Controlador:** `CommentsController.store`
